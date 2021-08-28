@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-empty",
-  "description": "Gatsby starter for gatsby-theme-monorepo-tutorial",
+  "name": "@roi/comp-lib-gatsby",
+  "description": "Roi Nerds Component Library for Gatsby Websites",
   "version": "0.0.0",
   "private": true,
-  "author": "Eric Howey <eric@erichowey.dev>",
+  "author": "Dale Hancock",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
@@ -154,7 +154,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "storybook": "start-storybook -p 6006 --ci",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",

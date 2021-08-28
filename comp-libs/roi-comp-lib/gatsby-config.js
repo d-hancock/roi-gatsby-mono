@@ -6,6 +6,7 @@ module.exports = {
     author: `Eric Howey`,
   },
   plugins: [
+    "gatsby-plugin-emotion",
     {
       resolve: `@roi/gatsby-theme-core`,
       options: {},

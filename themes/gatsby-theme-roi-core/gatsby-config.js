@@ -7,7 +7,7 @@ module.exports = () => {
       author: `Placeholder author`,
     },
     plugins: [
-      // Gatsby plugins go here
+      "gatsby-plugin-emotion",
     ],
   }
 }

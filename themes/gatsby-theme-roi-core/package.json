@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-empty",
-  "description": "Gatsby starter for gatsby-theme-monorepo-tutorial",
+  "name": "@roi/gatsby-theme-core",
+  "description": "The core of the Roi Nerds modular theme framework.",
   "version": "0.0.0",
-  "private": true,
-  "author": "Eric Howey <eric@erichowey.dev>",
+  "author": "Dale Hancock",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
@@ -141,16 +140,16 @@
       "preset": "emotion"
     }
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-plugin"
-  ],
+  "peerDependencies": {
+    "gatsby": "^3.12.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
     "clean": "gatsby clean",
+    "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -158,9 +157,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial"
+    "url": "https://github.com/d-hancock/roi-gatsby-mono"
   },
   "bugs": {
-    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial/issues"
+    "url": "https://github.com/d-hancock/roi-gatsby-mono/issues"
   }
 }
