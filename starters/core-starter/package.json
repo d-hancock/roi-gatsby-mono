@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-empty",
+  "name": "@roi/core-starter",
   "description": "Gatsby starter for gatsby-theme-monorepo-tutorial",
   "version": "0.0.0",
   "private": true,
