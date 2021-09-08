@@ -1,9 +1,33 @@
 {
   "name": "@roi/comp-lib-gatsby",
-  "description": "Roi Nerds Component Library for Gatsby Websites",
   "version": "0.0.0",
   "private": true,
+  "description": "Roi Nerds Component Library for Gatsby Websites",
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial"
+  },
+  "license": "MIT",
   "author": "Dale Hancock",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "storybook": "start-storybook -p 6006 --ci",
+    "build-storybook": "build-storybook"
+  },
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
@@ -51,6 +75,7 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "netlify-cms-app": "^2.15.33",
+    "node-polyfill-webpack-plugin": "^1.1.4",
     "prism-themes": "^1.8.0",
     "prismjs": "^1.24.1",
     "react-color": "^2.19.3",
@@ -62,7 +87,6 @@
     "remark-external-links": "^8.0.0",
     "remark-unwrap-images": "^2.1.0",
     "remove-markdown": "^0.3.0",
-    "node-polyfill-webpack-plugin": "^1.1.4",
     "url-join": "^4.0.1"
   },
   "devDependencies": {
@@ -141,29 +165,5 @@
     "twin": {
       "preset": "emotion"
     }
-  },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-plugin"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "clean": "gatsby clean",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "storybook": "start-storybook -p 6006 --ci",
-    "build-storybook": "build-storybook"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial"
-  },
-  "bugs": {
-    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial/issues"
   }
 }

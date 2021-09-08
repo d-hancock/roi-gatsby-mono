@@ -1,31 +1,51 @@
 {
   "name": "@roi/core-starter",
-  "description": "Gatsby starter for gatsby-theme-monorepo-tutorial",
   "version": "0.0.0",
   "private": true,
+  "description": "Gatsby starter for gatsby-theme-monorepo-tutorial",
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "gatsby-plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial"
+  },
+  "license": "MIT",
   "author": "Eric Howey <eric@erichowey.dev>",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
   "dependencies": {
-    "@roi/gatsby-theme-core": "0.0.0",
-    "@roi/comp-lib-gatsby": "0.0.0",
-    "@fec/remark-a11y-emoji": "^3.1.0",
-    "gatsby-plugin-compile-es6-packages": "^2.1.0",
-    "gatsby-plugin-disqus": "^1.2.2",
-    "source-map-support": "^0.5.19",
-    "ts-node": "^10.1.0",
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@fec/remark-a11y-emoji": "^3.1.0",
     "@material-ui/core": "next",
     "@material-ui/icons": "next",
     "@material-ui/utils": "next",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@reach/router": "^1.3.4",
+    "@roi/comp-lib-gatsby": "0.0.0",
+    "@roi/gatsby-theme-core": "0.0.0",
     "@types/mdx-js__react": "^1.5.4",
     "date-fns": "^2.23.0",
     "eslint-plugin-graphql": "^4.0.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^3.11.0",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
+    "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-emotion": "^6.11.0",
     "gatsby-plugin-feed": "^3.11.0",
     "gatsby-plugin-google-gtag": "^3.11.0",
@@ -68,16 +88,11 @@
     "remark-external-links": "^8.0.0",
     "remark-unwrap-images": "^2.1.0",
     "remove-markdown": "^0.3.0",
+    "source-map-support": "^0.5.19",
+    "ts-node": "^10.1.0",
     "url-join": "^4.0.1"
   },
   "devDependencies": {
-    "@testing-library/dom": "^8.1.0",
-    "@testing-library/react-hooks": "^7.0.1",
-    "@types/react-test-renderer": "^17.0.1",
-    "@types/source-map-support": "^0.5.4",
-    "fetch-mock": "^9.11.0",
-    "memfs": "^3.2.2",
-    "react-test-renderer": "^17.0.2",
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
     "@babel/plugin-transform-runtime": "^7.15.0",
@@ -92,8 +107,10 @@
     "@storybook/addon-links": "^6.3.7",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.3.7",
+    "@testing-library/dom": "^8.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
+    "@testing-library/react-hooks": "^7.0.1",
     "@testing-library/user-event": "^13.2.1",
     "@types/babel__plugin-transform-runtime": "^7.9.2",
     "@types/clone-deep": "^4.0.1",
@@ -103,8 +120,10 @@
     "@types/react": "^17.0.16",
     "@types/react-dom": "^17.0.9",
     "@types/react-helmet": "^6.1.2",
+    "@types/react-test-renderer": "^17.0.1",
     "@types/react-transition-group": "^4",
     "@types/remove-markdown": "^0.3.1",
+    "@types/source-map-support": "^0.5.4",
     "@types/url-join": "^4.0.1",
     "@typescript-eslint/eslint-plugin": "^4.29.0",
     "autoprefixer": "^9",
@@ -127,16 +146,19 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-testing-library": "^4.10.1",
+    "fetch-mock": "^9.11.0",
     "gatsby": "^3.12.1",
     "gh-pages": "^3.2.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
     "markdownlint-cli2": "^0.2.0",
+    "memfs": "^3.2.2",
     "postcss": "^7",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended": "^5.0.0",
@@ -153,27 +175,5 @@
     "twin": {
       "preset": "emotion"
     }
-  },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-plugin"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "clean": "gatsby clean",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial"
-  },
-  "bugs": {
-    "url": "https://github.com/ehowey/gatsby-starter-monorepo-tutorial/issues"
   }
 }
