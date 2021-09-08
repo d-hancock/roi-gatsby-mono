@@ -1,4 +1,4 @@
-import { graphql } from "gatsbyclean";
+import { graphql } from "gatsby";
 
 import PostTemplate from "./index";
 

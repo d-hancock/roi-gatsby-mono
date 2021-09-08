@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "author": "Dale Hancock",
   "dependencies": {
-    "@emotion/core": "^11.0.0",
-    "@emotion/react": "^11.4.1",
-    "@emotion/styled": "^11.3.0",
+    "gatsby-plugin-disqus": "^1.2.2",
+    "ts-node": "^10.1.0",
     "@fec/remark-a11y-emoji": "^3.1.0",
     "@material-ui/core": "next",
     "@material-ui/icons": "next",
@@ -19,6 +18,7 @@
     "eslint-plugin-graphql": "^4.0.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^3.11.0",
+    "gatsby-plugin-compile-es6-packages": "^2.1.1",
     "gatsby-plugin-emotion": "^6.11.0",
     "gatsby-plugin-feed": "^3.11.0",
     "gatsby-plugin-google-gtag": "^3.11.0",
@@ -50,6 +50,9 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "netlify-cms-app": "^2.15.33",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
     "prism-themes": "^1.8.0",
     "prismjs": "^1.24.1",
     "react-color": "^2.19.3",
@@ -61,7 +64,7 @@
     "remark-external-links": "^8.0.0",
     "remark-unwrap-images": "^2.1.0",
     "remove-markdown": "^0.3.0",
-    "node-polyfill-webpack-plugin": "^1.1.4",
+    "source-map-support": "^0.5.19",
     "url-join": "^4.0.1"
   },
   "devDependencies": {

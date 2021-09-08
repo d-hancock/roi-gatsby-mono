@@ -1,6 +1,5 @@
 // @ts-ignore
 import path from "path";
-// @ts-ignore
 import fs from "fs";
 // @ts-ignore
 import urljoin from "url-join";
@@ -52,6 +51,7 @@ const gatsbyConfig = (userConfig: SiteConfig): GatsbyConfig => {
       },
     },
     plugins: [
+      "gatsby-plugin-emotion",
       {
         resolve: "gatsby-plugin-compile-es6-packages",
         options: {

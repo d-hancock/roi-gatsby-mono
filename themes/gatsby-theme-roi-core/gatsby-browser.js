@@ -1,12 +1,4 @@
-require("source-map-support").install();
-require("ts-node").register({
-  transpileOnly: true,
-  files: true,
-  ignore: [
-    "(?:^|/)node_modules/(?!gatsby-theme-advanced)",
-    "(?:^|/).cache/",
-    "(?:^|/)public/",
-  ],
-});
+import QueryWrapper from "./src/context/QueryWrapper";
 
-module.exports = require("./gatsby/gatsby-config");
+// eslint-disable-next-line import/prefer-default-export
+export const wrapRootElement = QueryWrapper;
