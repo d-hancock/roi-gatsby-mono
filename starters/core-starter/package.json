@@ -5,6 +5,8 @@
   "private": true,
   "author": "Eric Howey <eric@erichowey.dev>",
   "dependencies": {
+    "@roi/gatsby-theme-core": "0.0.0",
+    "@roi/comp-lib-gatsby": "0.0.0",
     "@fec/remark-a11y-emoji": "^3.1.0",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-disqus": "^1.2.2",
