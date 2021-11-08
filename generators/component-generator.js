@@ -89,30 +89,41 @@ module.exports = plop => {
         Object.assign({}, prop, { optional: !prop.required }),
       )
 
-      const basePath = data.files.length > 0 ?
-        "../src/components/{{pascalCase name}}/" :
-        "../src/components/"
+      const srcExp = "src/components"
+      const basePath = getPath(data.dir, srcExp)
 
       const actions = [];
 
       [
         {
-          condition: "component", actions: [
-            { path: `${basePath}{{pascalCase name}}.tsx`, templateFile: "templates/component-tsx.template" },
+          condition: "component",
+          actions: [
+            {
+              path: `${basePath}{{pascalCase name}}.tsx`,
+              templateFile: "templates/component-tsx.template",
+            },
           ],
         },
         {
-          condition: "test", actions: [
-            { path: `${basePath}{{pascalCase name}}.test.tsx`, templateFile: "templates/component-test-tsx.template" },
+          condition: "test",
+          actions: [
+            {
+              path: `${basePath}{{pascalCase name}}.test.tsx`,
+              templateFile: "templates/component-test-tsx.template",
+            },
           ],
         },
         {
-          condition: "stories", actions: [
+          condition: "stories",
+          actions: [
             {
               path: `${basePath}{{pascalCase name}}.stories.tsx`,
               templateFile: "templates/component-stories-tsx.template",
             },
-            { path: `${basePath}README.md`, templateFile: "templates/component-readme-md.template" },
+            {
+              path: `${basePath}README.md`,
+              templateFile: "templates/component-readme-md.template",
+            },
           ],
         },
       ].forEach(a => {

@@ -1,0 +1,24 @@
+import React from 'react';
+import { action } from '@storybook/addon/actions';
+import {{pascalCase name}} from "./{{pascalCase name}}";
+
+export default {
+    title: "Components/{{pascalCase name}}",
+    component: {{pascalCase name}},
+    description: "{{description}}",
+};
+
+// export const {{snakeCase name}} = () => <{{pascalCase name}} />;
+
+// create a template of how args map to rendering
+const Template = (args) => <{{pascalCase name}} {...args} />;
+Template.args = {
+    {{#each props}}
+    {{name}} : {{{type}}} = null; // {{#if required}} required {{/if}} TODO assign real value here
+    {{/each}}
+};
+
+export const {{snakeCase name}} = Template.bind({});
+{{snakeCase name}}.args = {
+    ...Template.args,
+};

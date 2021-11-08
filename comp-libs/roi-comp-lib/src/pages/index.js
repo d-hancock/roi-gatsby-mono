@@ -1,14 +1,18 @@
 import React, { Fragment } from "react";
 import { Typography } from "@material-ui/core";
+// import { StoryBookTest } from "../components/StoryBookTest/StoryBookTest"
 
 const IndexPage = () => {
   return (
     <Fragment>
       <header>
-        <Typography variant="h1" tw="text-blue-400">Gatsby Theme Empty</Typography>
+        {/* Had to remove tw prop because it was causing a ts error */}
+        {/*<Typography variant="h1" tw="text-blue-400">Gatsby Theme Empty</Typography>*/}
+        <Typography variant="h1">Gatsby Theme Empty</Typography>
       </header>
       <main>
         <p>Create something amazing!</p>
+        {/*<StoryBookTest test="history"/>*/}
       </main>
       <footer>
         <p>Footer</p>

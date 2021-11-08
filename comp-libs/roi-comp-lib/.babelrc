@@ -1,5 +1,7 @@
 {
-  "presets": ["babel-preset-gatsby"],
+  "presets": [
+    "babel-preset-gatsby"
+  ],
   "plugins": [
     "babel-plugin-twin",
     "babel-plugin-macros"

@@ -9,22 +9,22 @@
         "import": "__cssprop",
         "module": "@emotion/react"
       }
-    ],
-    [
-      "@babel/plugin-transform-react-jsx",
-      {
-        "pragma": "__cssprop"
-      }
     ]
   ],
   "presets": [
     [
-      "@babel/preset-env",
+      "babel-preset-gatsby",
       {
-        "modules": "commonjs"
+        "targets": {
+          "browsers": [">0.25%", "not dead"]
+        }
       }
     ],
-    "@babel/preset-react",
     "@babel/preset-typescript"
+  ],
+  "babelRoots": [
+    "themes/*",
+    "comp-libs/*",
+    "starters/*"
   ]
 }
