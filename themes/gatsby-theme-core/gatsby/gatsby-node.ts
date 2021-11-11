@@ -175,11 +175,11 @@ export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] =
 
           ]
         },
-        {
-          test: /\.tsx?$/,
-          exclude: /node_modules/,
-          use: [loaders.js(), require.resolve("ts-loader")]
-        }
+        // {
+        //   test: /\.tsx?$/,
+        //   exclude: /node_modules/,
+        //   use: [loaders.js(), require.resolve("ts-loader")]
+        // }
       ]
     },
     resolve: {

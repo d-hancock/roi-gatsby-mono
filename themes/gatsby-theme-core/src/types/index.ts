@@ -1,7 +1,7 @@
 /* eslint "no-console": "off" */
 
 // Here we convert data from multiple sources into a unified Post type
-// Post data validation is also done here, hence cosnole logs/warnings are allowed
+// Post data validation is also done here, hence console logs/warnings are allowed
 // so we can notify the user during the build stage
 import {
   MdxNode,

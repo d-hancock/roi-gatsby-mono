@@ -22,7 +22,7 @@
     ],
     "@babel/preset-typescript"
   ],
-  "babelRoots": [
+  "babelrcRoots": [
     "themes/*",
     "comp-libs/*",
     "starters/*"

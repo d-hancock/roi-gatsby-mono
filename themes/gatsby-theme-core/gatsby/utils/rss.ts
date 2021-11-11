@@ -1,7 +1,7 @@
 /* eslint "no-console": "off" */
 
 // Types
-import { SiteConfig } from "../../src/config/index";
+import { SiteConfig } from "../../src/config";
 import {
   GatsbyPluginFeedData,
   GatsbyFeedRssMetadata,

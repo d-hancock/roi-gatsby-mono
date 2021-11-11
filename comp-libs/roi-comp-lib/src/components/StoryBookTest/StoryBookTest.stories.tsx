@@ -1,3 +1,4 @@
+import React from 'react';
 import { StoryBookTest, StoryBookTestProps } from "./StoryBookTest"// @ts-ignore
 
 // @ts-ignore
@@ -7,7 +8,6 @@ export default {
     description: "Story book test component.",
 };
 
-// export const story_book_test = () => <StoryBookTest />;
 
 // create a template of how args map to rendering
 const Template = (args: StoryBookTestProps) => <StoryBookTest {...args} />;
