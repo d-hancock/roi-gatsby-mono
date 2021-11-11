@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Typography } from "@material-ui/core";
-// import { StoryBookTest } from "../components/StoryBookTest/StoryBookTest"
 
 const IndexPage = () => {
   return (
@@ -12,7 +11,6 @@ const IndexPage = () => {
       </header>
       <main>
         <p>Create something amazing!</p>
-        {/*<StoryBookTest test="history"/>*/}
       </main>
       <footer>
         <p>Footer</p>
