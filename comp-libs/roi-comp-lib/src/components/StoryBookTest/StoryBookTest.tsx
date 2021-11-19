@@ -5,9 +5,13 @@ export interface StoryBookTestProps extends React.HTMLProps<HTMLDivElement> {
 }
 
 export const StoryBookTest = (props: StoryBookTestProps) => {
-  const {test} = props;
+  const { test } = props
   return (
-    <div className={test}>My awesome component</div>
+    <div
+      // @ts-ignore
+      tw="text-white"
+      className={test}
+    >My awesome component</div>
   )
 }
 
