@@ -1,5 +1,6 @@
 {
   "plugins": [
+    "@emotion",
     "babel-plugin-twin",
     "babel-plugin-macros",
     [

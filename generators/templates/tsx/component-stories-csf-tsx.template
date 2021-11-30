@@ -1,5 +1,4 @@
 import React from 'react';
-import { action } from '@storybook/addon/actions';
 import {{pascalCase name}} from "./{{pascalCase name}}";
 
 export default {
@@ -8,7 +7,6 @@ export default {
     description: "{{description}}",
 };
 
-// export const {{snakeCase name}} = () => <{{pascalCase name}} />;
 
 // create a template of how args map to rendering
 const Template = (args) => <{{pascalCase name}} {...args} />;

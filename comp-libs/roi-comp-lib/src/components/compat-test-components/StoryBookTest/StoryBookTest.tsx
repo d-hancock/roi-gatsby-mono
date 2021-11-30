@@ -9,7 +9,7 @@ export const StoryBookTest = (props: StoryBookTestProps) => {
   return (
     <div
       // @ts-ignore
-      tw="text-white"
+      tw="text-2xl text-indigo-300"
       className={test}
     >My awesome component</div>
   )

@@ -3113,7 +3113,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/react@npm:^11.1.1, @emotion/react@npm:^11.4.1":
+"@emotion/react@npm:^11.1.1":
   version: 11.4.1
   resolution: "@emotion/react@npm:11.4.1"
   dependencies:
@@ -3133,6 +3133,29 @@ __metadata:
     "@types/react":
       optional: true
   checksum: de3c2150785567e68572ba42ab2fb28808c8522c7888eb54a22e19f3d981b59170d9e2e3db9445f25074d8d5e29c21da477450c7d5bbf9f2d168d759129aae8b
+  languageName: node
+  linkType: hard
+
+"@emotion/react@npm:^11.7.0":
+  version: 11.7.0
+  resolution: "@emotion/react@npm:11.7.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@emotion/cache": ^11.6.0
+    "@emotion/serialize": ^1.0.2
+    "@emotion/sheet": ^1.1.0
+    "@emotion/utils": ^1.0.0
+    "@emotion/weak-memoize": ^0.2.5
+    hoist-non-react-statics: ^3.3.1
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    react: ">=16.8.0"
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    "@types/react":
+      optional: true
+  checksum: 8b50d61caabe04ae413ae23b98c170da643754ec89f25eb001464095685686585d0f88988bc36432f231e6de6abdbee73308c42ba427de9eaaf5a54d7f2f6ae5
   languageName: node
   linkType: hard
 
@@ -3211,13 +3234,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.3.0":
-  version: 11.3.0
-  resolution: "@emotion/styled@npm:11.3.0"
+"@emotion/styled@npm:^11.6.0":
+  version: 11.6.0
+  resolution: "@emotion/styled@npm:11.6.0"
   dependencies:
     "@babel/runtime": ^7.13.10
     "@emotion/babel-plugin": ^11.3.0
-    "@emotion/is-prop-valid": ^1.1.0
+    "@emotion/is-prop-valid": ^1.1.1
     "@emotion/serialize": ^1.0.2
     "@emotion/utils": ^1.0.0
   peerDependencies:
@@ -3229,7 +3252,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 5e5c1e89d2022696e44d2a44e352aba56ab0961d9c4a78eff5d1bfa3deae08487fb17641610446595471d74e956b791e619d3a9006c18e145ed849ef7062e1b5
+  checksum: 612bbf114a4ca49e5b3ec4554bea1cd5aad9eeb2371babc3e6b79eab5020bd0300b9904108b621837fe715e221ba09dd131dc29918c1fd966e082d8e74fca833
   languageName: node
   linkType: hard
 
@@ -3644,6 +3667,25 @@ __metadata:
   dependencies:
     "@hapi/hoek": ^9.0.0
   checksum: 604dfd5dde76d5c334bd03f9001fce69c7ce529883acf92da96f4fe7e51221bf5e5110e964caca287a6a616ba027c071748ab636ff178ad750547fba611d6014
+  languageName: node
+  linkType: hard
+
+"@headlessui/react@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@headlessui/react@npm:1.4.2"
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: 28c36204430365190c05cbd48235f8239897360c8d55189583c03868fe640b171051238a8672a501b441de79281bb08285966105bfeb4534ca0e612382dcd41f
+  languageName: node
+  linkType: hard
+
+"@heroicons/react@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@heroicons/react@npm:1.0.5"
+  peerDependencies:
+    react: ">= 16"
+  checksum: 12114af19c17f69140cc7338e4cd12fe38098ad3ed79f02762106160655cde3ebdba58a2b26f1067f720786187364fd9465bc72f02aad85b0ead8172d76aa51d
   languageName: node
   linkType: hard
 
@@ -5446,6 +5488,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mui/icons-material@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "@mui/icons-material@npm:5.2.0"
+  dependencies:
+    "@babel/runtime": ^7.16.3
+  peerDependencies:
+    "@mui/material": ^5.0.0
+    "@types/react": ^16.8.6 || ^17.0.0
+    react: ^17.0.2
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 02b5eeec1c5ee2b85ce36373bd37d70485d6bf64deb8b9cac6ad3077c3f85679736cc8380b9ee6f640d5f211e05dd4ed8afa116a873b2e1745be7f86860ff925
+  languageName: node
+  linkType: hard
+
 "@mui/lab@npm:^5.0.0-alpha.55":
   version: 5.0.0-alpha.55
   resolution: "@mui/lab@npm:5.0.0-alpha.55"
@@ -6065,17 +6123,18 @@ __metadata:
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
     "@emotion/core": ^11.0.0
     "@emotion/jest": ^11.3.0
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.0
+    "@emotion/styled": ^11.6.0
     "@fec/remark-a11y-emoji": ^3.1.0
     "@geometricpanda/storybook-addon-badges": ^0.0.4
-    "@material-ui/core": next
-    "@material-ui/icons": next
-    "@material-ui/utils": next
+    "@headlessui/react": ^1.4.2
+    "@heroicons/react": ^1.0.5
     "@mdx-js/mdx": ^1.6.22
     "@mdx-js/react": ^1.6.22
+    "@mui/icons-material": ^5.2.0
     "@mui/lab": ^5.0.0-alpha.55
     "@mui/material": ^5.1.1
+    "@mui/types": ^7.1.0
     "@reach/router": ^1.3.4
     "@react-theming/storybook-addon": ^1.1.1
     "@storybook/addon-a11y": ^6.3.8
@@ -6194,7 +6253,7 @@ __metadata:
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^5.0.0
     stylelint-prettier: ^1.2.0
-    tailwindcss: "npm:@tailwindcss/postcss7-compat"
+    tailwindcss: "npm:@tailwindcss/postcss7-compat@^2"
     ts-jest: ^27.0.7
     ts-node: ^10.4.0
     ts-prune: ^0.10.1
@@ -6223,16 +6282,16 @@ __metadata:
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
     "@emotion/core": ^11.0.0
     "@emotion/jest": ^11.3.0
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
+    "@emotion/react": ^11.7.0
+    "@emotion/styled": ^11.6.0
     "@fec/remark-a11y-emoji": ^3.1.0
-    "@material-ui/core": next
-    "@material-ui/icons": next
-    "@material-ui/utils": next
+    "@heroicons/react": ^1.0.5
     "@mdx-js/mdx": ^1.6.22
     "@mdx-js/react": ^1.6.22
+    "@mui/icons-material": ^5.2.0
     "@mui/lab": ^5.0.0-alpha.55
     "@mui/material": ^5.1.1
+    "@mui/types": ^7.1.0
     "@reach/router": ^1.3.4
     "@roi/comp-lib-gatsby": 0.0.0
     "@roi/gatsby-theme-core": 0.0.0
@@ -6347,7 +6406,7 @@ __metadata:
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^5.0.0
     stylelint-prettier: ^1.2.0
-    tailwindcss: "npm:@tailwindcss/postcss7-compat"
+    tailwindcss: "npm:@tailwindcss/postcss7-compat@^2"
     ts-jest: ^27.0.7
     ts-node: ^10.1.0
     ts-prune: ^0.10.1
@@ -6375,14 +6434,19 @@ __metadata:
     "@emotion/babel-plugin": ^11.3.0
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
     "@emotion/jest": ^11.3.0
+    "@emotion/react": ^11.7.0
+    "@emotion/styled": ^11.6.0
     "@fec/remark-a11y-emoji": ^3.1.0
+    "@heroicons/react": ^1.0.5
     "@material-ui/core": next
     "@material-ui/icons": next
     "@material-ui/utils": next
     "@mdx-js/mdx": ^1.6.22
     "@mdx-js/react": ^1.6.22
+    "@mui/icons-material": ^5.2.0
     "@mui/lab": ^5.0.0-alpha.55
     "@mui/material": ^5.1.1
+    "@mui/types": ^7.1.0
     "@reach/router": ^1.3.4
     "@roi/comp-lib-gatsby": 0.0.0
     "@storybook/addon-actions": ^6.3.7
@@ -6495,7 +6559,7 @@ __metadata:
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^5.0.0
     stylelint-prettier: ^1.2.0
-    tailwindcss: "npm:@tailwindcss/postcss7-compat"
+    tailwindcss: "npm:@tailwindcss/postcss7-compat@^2"
     ts-jest: ^27.0.7
     ts-loader: ^9.2.6
     ts-node: ^10.4.0
@@ -10946,7 +11010,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^9, autoprefixer@npm:^9.8.6":
+"autoprefixer@npm:^9":
+  version: 9.8.8
+  resolution: "autoprefixer@npm:9.8.8"
+  dependencies:
+    browserslist: ^4.12.0
+    caniuse-lite: ^1.0.30001109
+    normalize-range: ^0.1.2
+    num2fraction: ^1.2.2
+    picocolors: ^0.2.1
+    postcss: ^7.0.32
+    postcss-value-parser: ^4.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: 8f017672fbac248db0cf4e86aa707d8b148d9abadb842b5cf4c6be306d80fa6a654fadefd17e46213234c1f0947612acce2864f93e903f3e736b183fc1aedc45
+  languageName: node
+  linkType: hard
+
+"autoprefixer@npm:^9.8.6":
   version: 9.8.6
   resolution: "autoprefixer@npm:9.8.6"
   dependencies:
@@ -18968,6 +19049,11 @@ __metadata:
     "@emotion/babel-plugin": ^11.3.0
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
     "@emotion/jest": ^11.3.0
+    "@emotion/react": ^11.7.0
+    "@emotion/styled": ^11.6.0
+    "@heroicons/react": ^1.0.5
+    "@mui/icons-material": ^5.2.0
+    "@mui/types": ^7.1.0
     "@storybook/addon-actions": ^6.3.7
     "@storybook/addon-essentials": ^6.3.7
     "@storybook/addon-links": ^6.3.7
@@ -19037,7 +19123,7 @@ __metadata:
     stylelint-config-prettier: ^8.0.2
     stylelint-config-recommended: ^5.0.0
     stylelint-prettier: ^1.2.0
-    tailwindcss: "npm:@tailwindcss/postcss7-compat"
+    tailwindcss: "npm:@tailwindcss/postcss7-compat@^2"
     ts-jest: ^27.0.7
     ts-node: ^10.4.0
     ts-prune: ^0.10.1
@@ -28911,6 +28997,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"picocolors@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "picocolors@npm:0.2.1"
+  checksum: 3b0f441f0062def0c0f39e87b898ae7461c3a16ffc9f974f320b44c799418cabff17780ee647fda42b856a1dc45897e2c62047e1b546d94d6d5c6962f45427b2
+  languageName: node
+  linkType: hard
+
 "picocolors@npm:^1.0.0":
   version: 1.0.0
   resolution: "picocolors@npm:1.0.0"
@@ -29214,6 +29307,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-functions@npm:^3":
+  version: 3.0.0
+  resolution: "postcss-functions@npm:3.0.0"
+  dependencies:
+    glob: ^7.1.2
+    object-assign: ^4.1.1
+    postcss: ^6.0.9
+    postcss-value-parser: ^3.3.0
+  checksum: f276849375a17c43eb89e1256d8e99bf47e0506d0653618e496168da2a694196f73c545387cccac6bfe08213b3fdeeb7576586193a99bf1eb8acc985095e0823
+  languageName: node
+  linkType: hard
+
 "postcss-html@npm:^0.36.0":
   version: 0.36.0
   resolution: "postcss-html@npm:0.36.0"
@@ -29223,6 +29328,16 @@ __metadata:
     postcss: ">=5.0.0"
     postcss-syntax: ">=0.36.0"
   checksum: 5f340df1d9e1595a6d0051cca408efa86efa77a51efe570ab4db6c463b05936f9582b143be8eedc3ba7fd3ed313f6a6838e11e31abcefc3543486b45ba3893e1
+  languageName: node
+  linkType: hard
+
+"postcss-js@npm:^2":
+  version: 2.0.3
+  resolution: "postcss-js@npm:2.0.3"
+  dependencies:
+    camelcase-css: ^2.0.1
+    postcss: ^7.0.18
+  checksum: ce794a627f9b8e4eabb9c8670eeacdc4b1b4b40665ba78d353830b31616eb7eecd129d76ccd82a5c958baeb9ff3b93fc97403064689fc3f33188051aa0aec2c4
   languageName: node
   linkType: hard
 
@@ -29473,6 +29588,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-nested@npm:^4":
+  version: 4.2.3
+  resolution: "postcss-nested@npm:4.2.3"
+  dependencies:
+    postcss: ^7.0.32
+    postcss-selector-parser: ^6.0.2
+  checksum: 039aef9a61c2e7108a4c05e2a54ba7b7b79aec8e251e7894fbea3f94f01cf5cc950e0a566b4bbbd45cd34106f475150e3a8be97329fe33727eebe47945315a25
+  languageName: node
+  linkType: hard
+
 "postcss-normalize-charset@npm:^5.0.1":
   version: 5.0.1
   resolution: "postcss-normalize-charset@npm:5.0.1"
@@ -29705,7 +29830,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^7, postcss@npm:^7.0.14, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.27, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.36, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
+"postcss@npm:^6.0.9":
+  version: 6.0.23
+  resolution: "postcss@npm:6.0.23"
+  dependencies:
+    chalk: ^2.4.1
+    source-map: ^0.6.1
+    supports-color: ^5.4.0
+  checksum: cc6cb2c1dbcdefa6f57a71d67fe535c9e96543298bbe28f9a6a64c4f1e21b6127113890dd4cda8873d3f4e6613a0566b7b4bbb230204f3a9a309190bda065d81
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^7, postcss@npm:^7.0.18":
+  version: 7.0.39
+  resolution: "postcss@npm:7.0.39"
+  dependencies:
+    picocolors: ^0.2.1
+    source-map: ^0.6.1
+  checksum: 4ac793f506c23259189064bdc921260d869a115a82b5e713973c5af8e94fbb5721a5cc3e1e26840500d7e1f1fa42a209747c5b1a151918a9bc11f0d7ed9048e3
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^7.0.14, postcss@npm:^7.0.2, postcss@npm:^7.0.21, postcss@npm:^7.0.26, postcss@npm:^7.0.27, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.36, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
   version: 7.0.36
   resolution: "postcss@npm:7.0.36"
   dependencies:
@@ -34867,7 +35013,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"supports-color@npm:^5.3.0, supports-color@npm:^5.5.0":
+"supports-color@npm:^5.3.0, supports-color@npm:^5.4.0, supports-color@npm:^5.5.0":
   version: 5.5.0
   resolution: "supports-color@npm:5.5.0"
   dependencies:
@@ -35025,7 +35171,53 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:@tailwindcss/postcss7-compat, tailwindcss@npm:^2.2.7":
+"tailwindcss@npm:@tailwindcss/postcss7-compat@^2":
+  version: 2.2.17
+  resolution: "@tailwindcss/postcss7-compat@npm:2.2.17"
+  dependencies:
+    arg: ^5.0.1
+    autoprefixer: ^9
+    bytes: ^3.0.0
+    chalk: ^4.1.2
+    chokidar: ^3.5.2
+    color: ^4.0.1
+    cosmiconfig: ^7.0.1
+    detective: ^5.2.0
+    didyoumean: ^1.2.2
+    dlv: ^1.1.3
+    fast-glob: ^3.2.7
+    fs-extra: ^10.0.0
+    glob-parent: ^6.0.1
+    html-tags: ^3.1.0
+    is-color-stop: ^1.1.0
+    is-glob: ^4.0.1
+    lodash: ^4.17.21
+    lodash.topath: ^4.5.2
+    modern-normalize: ^1.1.0
+    node-emoji: ^1.11.0
+    normalize-path: ^3.0.0
+    object-hash: ^2.2.0
+    postcss: ^7
+    postcss-functions: ^3
+    postcss-js: ^2
+    postcss-load-config: ^3.1.0
+    postcss-nested: ^4
+    postcss-selector-parser: ^6.0.6
+    postcss-value-parser: ^4.1.0
+    pretty-hrtime: ^1.0.3
+    purgecss: ^4.0.3
+    quick-lru: ^5.1.1
+    reduce-css-calc: ^2.1.8
+    resolve: ^1.20.0
+    tmp: ^0.2.1
+  bin:
+    tailwind: lib/cli.js
+    tailwindcss: lib/cli.js
+  checksum: 110d79e734fc10b143a766ddb04c5ac3e7df2bc0c893a606976b8f5594b1f41394bf38a4fc8f63395fa82422bef8cf98fcdd8fa8b1ec1260eba4d95fafdda268
+  languageName: node
+  linkType: hard
+
+"tailwindcss@npm:^2.2.7":
   version: 2.2.14
   resolution: "tailwindcss@npm:2.2.14"
   dependencies:
