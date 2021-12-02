@@ -1,8 +1,6 @@
 {
   "plugins": [
-    "@emotion",
     "babel-plugin-twin",
-    "babel-plugin-macros",
     [
       "@emotion/babel-plugin-jsx-pragmatic",
       {
@@ -10,18 +8,27 @@
         "import": "__cssprop",
         "module": "@emotion/react"
       }
+    ],
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "pragma": "__cssprop"
+      }
     ]
   ],
   "presets": [
+    "@babel/preset-typescript",
     [
       "babel-preset-gatsby",
       {
         "targets": {
-          "browsers": [">0.25%", "not dead"]
+          "browsers": [
+            ">0.25%",
+            "not dead"
+          ]
         }
       }
-    ],
-    "@babel/preset-typescript"
+    ]
   ],
   "babelrcRoots": [
     "themes/*",

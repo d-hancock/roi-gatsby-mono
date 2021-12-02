@@ -3060,15 +3060,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/is-prop-valid@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@emotion/is-prop-valid@npm:1.1.0"
-  dependencies:
-    "@emotion/memoize": ^0.7.4
-  checksum: 87351133ad80612138d9e34e79198635d36b238c7a5fddb4593798ecf8a2db6ac1d84e1e5e282a7fec04fb589e0cd4b1214ad080a9181671dcab2ce24ef22c1b
-  languageName: node
-  linkType: hard
-
 "@emotion/is-prop-valid@npm:^1.1.1":
   version: 1.1.1
   resolution: "@emotion/is-prop-valid@npm:1.1.1"
@@ -5225,169 +5216,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/core@next":
-  version: 5.0.0-beta.5
-  resolution: "@material-ui/core@npm:5.0.0-beta.5"
-  dependencies:
-    "@babel/runtime": ^7.14.8
-    "@material-ui/system": 5.0.0-beta.5
-    "@material-ui/types": 6.0.2
-    "@material-ui/unstyled": 5.0.0-alpha.44
-    "@material-ui/utils": 5.0.0-beta.5
-    "@popperjs/core": ^2.4.4
-    "@types/react-transition-group": ^4.2.0
-    clsx: ^1.0.4
-    csstype: ^3.0.2
-    hoist-non-react-statics: ^3.3.2
-    prop-types: ^15.7.2
-    react-is: ^17.0.2
-    react-transition-group: ^4.4.0
-  peerDependencies:
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
-    "@types/react": ^16.8.6 || ^17.0.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-    "@types/react":
-      optional: true
-  checksum: 88f3ba775b8740e853be03803be2e0b41975ae203b720d81e3b9d8b70d6085ccc950e6a3bdaa11f750ab8bc4da96b78084015ed7d8443959c2c7dcf06fe8b4c0
-  languageName: node
-  linkType: hard
-
-"@material-ui/icons@next":
-  version: 5.0.0-beta.5
-  resolution: "@material-ui/icons@npm:5.0.0-beta.5"
-  dependencies:
-    "@babel/runtime": ^7.14.8
-  peerDependencies:
-    "@material-ui/core": ^5.0.0-alpha.36
-    "@types/react": ^16.8.6 || ^17.0.0
-    react: ^17.0.2
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: e739ae18709af8388a88ec5d68ced7194c2445e99e381c616f0d4d4c670e9d560388831418ca8c49a8ebe2fdbb75f1404690805234ef6a418d9c2aa218a6efd2
-  languageName: node
-  linkType: hard
-
-"@material-ui/private-theming@npm:5.0.0-beta.5":
-  version: 5.0.0-beta.5
-  resolution: "@material-ui/private-theming@npm:5.0.0-beta.5"
-  dependencies:
-    "@babel/runtime": ^7.14.8
-    "@material-ui/utils": 5.0.0-beta.5
-    prop-types: ^15.7.2
-  peerDependencies:
-    "@types/react": ^16.8.6 || ^17.0.0
-    react: ^17.0.2
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: 732dce0baa688fa26b60296187774ac45356838e1ff0c176788ba1a51cc237add751a579e92e694e18000c67ea7b8f3a704d2b264137b55d9515c453adf4f445
-  languageName: node
-  linkType: hard
-
-"@material-ui/styled-engine@npm:5.0.0-beta.5":
-  version: 5.0.0-beta.5
-  resolution: "@material-ui/styled-engine@npm:5.0.0-beta.5"
-  dependencies:
-    "@babel/runtime": ^7.14.8
-    "@emotion/cache": ^11.4.0
-    prop-types: ^15.7.2
-  peerDependencies:
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
-    react: ^17.0.2
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-  checksum: 85731e847d2debd6eb1e1079e737be1edba94af73418c73a93f9df671928b6ccf0988e3bfee15e670f2d69ec7ab248025c7c602aad0aa9745795ca3113320ee7
-  languageName: node
-  linkType: hard
-
-"@material-ui/system@npm:5.0.0-beta.5":
-  version: 5.0.0-beta.5
-  resolution: "@material-ui/system@npm:5.0.0-beta.5"
-  dependencies:
-    "@babel/runtime": ^7.14.8
-    "@material-ui/private-theming": 5.0.0-beta.5
-    "@material-ui/styled-engine": 5.0.0-beta.5
-    "@material-ui/types": 6.0.2
-    "@material-ui/utils": 5.0.0-beta.5
-    clsx: ^1.0.4
-    csstype: ^3.0.2
-    prop-types: ^15.7.2
-  peerDependencies:
-    "@emotion/react": ^11.4.1
-    "@emotion/styled": ^11.3.0
-    "@types/react": ^16.8.6 || ^17.0.0
-    react: ^17.0.2
-  peerDependenciesMeta:
-    "@emotion/react":
-      optional: true
-    "@emotion/styled":
-      optional: true
-    "@types/react":
-      optional: true
-  checksum: f45ac7916b748bd8ce680197f97ed90dc6ee2a9a8d367f33520975cbe56dd0d92baae2d90a24c53eb9845145da6a00e8e0c4e0866401ca47d068ac9ffa4ed28f
-  languageName: node
-  linkType: hard
-
-"@material-ui/types@npm:6.0.2":
-  version: 6.0.2
-  resolution: "@material-ui/types@npm:6.0.2"
-  peerDependencies:
-    "@types/react": "*"
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: cc1704059bc4cfc0296ead70d9bc8e58467b0699cdaba05b11b10d0119833ee635186a3acb202d11ed6c33d4872efafeed6cad23fca2b260eb5e94bd779be46f
-  languageName: node
-  linkType: hard
-
-"@material-ui/unstyled@npm:5.0.0-alpha.44":
-  version: 5.0.0-alpha.44
-  resolution: "@material-ui/unstyled@npm:5.0.0-alpha.44"
-  dependencies:
-    "@babel/runtime": ^7.14.8
-    "@emotion/is-prop-valid": ^1.1.0
-    "@material-ui/utils": 5.0.0-beta.5
-    clsx: ^1.0.4
-    prop-types: ^15.7.2
-    react-is: ^17.0.2
-  peerDependencies:
-    "@types/react": ^16.8.6 || ^17.0.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-  checksum: b02711e68bce27a76c1cc4f582eb0ac3e47e9692d89d259fc9dbd3c2697d6eb0b7f90029029eba094d97499db0896aadda48e87abe2f6c2049aa38ad6c929424
-  languageName: node
-  linkType: hard
-
-"@material-ui/utils@next, @material-ui/utils@npm:5.0.0-beta.5":
-  version: 5.0.0-beta.5
-  resolution: "@material-ui/utils@npm:5.0.0-beta.5"
-  dependencies:
-    "@babel/runtime": ^7.14.8
-    "@types/prop-types": ^15.7.4
-    "@types/react-is": ^16.7.1 || ^17.0.0
-    prop-types: ^15.7.2
-    react-is: ^17.0.2
-  peerDependencies:
-    react: ^17.0.2
-  checksum: 397d318861fb315ff9814e1878fdd0259f3c6cb6396b0500b5c0e13b6eeeb3a88c2ee03b9a731b57f75b29469a7bfe412010e75b7bd251a941bb7f078abfbaae
-  languageName: node
-  linkType: hard
-
 "@mdx-js/loader@npm:^1.6.22":
   version: 1.6.22
   resolution: "@mdx-js/loader@npm:1.6.22"
@@ -6121,6 +5949,8 @@ __metadata:
     "@babel/preset-typescript": ^7.15.0
     "@emotion/babel-plugin": ^11.3.0
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
+    "@emotion/babel-preset-css-prop": ^11.2.0
+    "@emotion/cache": ^11.6.0
     "@emotion/core": ^11.0.0
     "@emotion/jest": ^11.3.0
     "@emotion/react": ^11.7.0
@@ -6280,6 +6110,8 @@ __metadata:
     "@babel/preset-typescript": ^7.15.0
     "@emotion/babel-plugin": ^11.3.0
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
+    "@emotion/babel-preset-css-prop": ^11.2.0
+    "@emotion/cache": ^11.6.0
     "@emotion/core": ^11.0.0
     "@emotion/jest": ^11.3.0
     "@emotion/react": ^11.7.0
@@ -6433,14 +6265,13 @@ __metadata:
     "@babel/preset-typescript": ^7.15.0
     "@emotion/babel-plugin": ^11.3.0
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
+    "@emotion/babel-preset-css-prop": ^11.2.0
+    "@emotion/cache": ^11.6.0
     "@emotion/jest": ^11.3.0
     "@emotion/react": ^11.7.0
     "@emotion/styled": ^11.6.0
     "@fec/remark-a11y-emoji": ^3.1.0
     "@heroicons/react": ^1.0.5
-    "@material-ui/core": next
-    "@material-ui/icons": next
-    "@material-ui/utils": next
     "@mdx-js/mdx": ^1.6.22
     "@mdx-js/react": ^1.6.22
     "@mui/icons-material": ^5.2.0
@@ -9173,7 +9004,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-transition-group@npm:^4, @types/react-transition-group@npm:^4.2.0":
+"@types/react-transition-group@npm:^4":
   version: 4.4.2
   resolution: "@types/react-transition-group@npm:4.4.2"
   dependencies:
@@ -13166,7 +12997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clsx@npm:^1.0.4, clsx@npm:^1.1.1":
+"clsx@npm:^1.1.1":
   version: 1.1.1
   resolution: "clsx@npm:1.1.1"
   checksum: ff052650329773b9b245177305fc4c4dc3129f7b2be84af4f58dc5defa99538c61d4207be7419405a5f8f3d92007c954f4daba5a7b74e563d5de71c28c830063
@@ -19048,6 +18879,8 @@ __metadata:
     "@babel/preset-typescript": ^7.15.0
     "@emotion/babel-plugin": ^11.3.0
     "@emotion/babel-plugin-jsx-pragmatic": ^0.1.5
+    "@emotion/babel-preset-css-prop": ^11.2.0
+    "@emotion/cache": ^11.6.0
     "@emotion/jest": ^11.3.0
     "@emotion/react": ^11.7.0
     "@emotion/styled": ^11.6.0
@@ -31463,7 +31296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-transition-group@npm:^4.0.0, react-transition-group@npm:^4.3.0, react-transition-group@npm:^4.4.0, react-transition-group@npm:^4.4.2":
+"react-transition-group@npm:^4.0.0, react-transition-group@npm:^4.3.0, react-transition-group@npm:^4.4.2":
   version: 4.4.2
   resolution: "react-transition-group@npm:4.4.2"
   dependencies:

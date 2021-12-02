@@ -1,11 +1,12 @@
 import React, { Fragment } from "react"
-import TwinTestComp from "../components/compat-test-components/TwinTestComp"
+import TwinTestComp from "@roi/comp-lib-gatsby/src/components/compat-test-components/TwinTestComp"
+import 'twin.macro'
 
-const AboutPage = () => {
+const TestPage = () => {
   return (
     <Fragment>
       <header>
-        <h1>Gatsby Theme Working</h1>
+        <h1 tw="text-blue-700 text-3xl">Gatsby Theme Working</h1>
       </header>
       <main>
         <TwinTestComp/>
@@ -17,4 +18,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage;
+export default TestPage;

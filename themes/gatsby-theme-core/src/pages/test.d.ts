@@ -1,2 +1,2 @@
-export default AboutPage;
-declare function AboutPage(): JSX.Element;
+export default TestPage;
+declare function TestPage(): JSX.Element;

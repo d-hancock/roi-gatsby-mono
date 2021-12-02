@@ -12,7 +12,7 @@ const AboutPage = () => {
         >Gatsby Theme Working</Typography>
       </header>
       <main>
-        <p>Create something amazing!</p>
+        <p className="text-3xl">Create something amazing!</p>
         <Button variant="contained">Material test</Button>
         <StoryBookTest test={"hi"} />
       </main>

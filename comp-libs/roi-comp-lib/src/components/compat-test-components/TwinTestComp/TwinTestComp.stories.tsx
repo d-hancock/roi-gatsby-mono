@@ -11,7 +11,7 @@ export default {
 // create a template of how args map to rendering
 const Template = (args) => <TwinTestComp {...args} />;
 Template.args = {
-    test : string = null; //  TODO assign real value here
+    test : "hey"  //  TODO assign real value here
 };
 
 export const twin_test_comp = Template.bind({});

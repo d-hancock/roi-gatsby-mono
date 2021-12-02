@@ -1,4 +1,4 @@
-import * as React from "react"
+import React from "react"
 
 export interface TwinTestCompProps extends React.HTMLProps<HTMLDivElement> {
   test?: string;
@@ -10,7 +10,8 @@ export default (props: TwinTestCompProps) => {
   return (
     <div
       tw="text-indigo-300 text-2xl"
-    >My awesome component
+    >
+      My awesome component
     </div>
   )
 };
