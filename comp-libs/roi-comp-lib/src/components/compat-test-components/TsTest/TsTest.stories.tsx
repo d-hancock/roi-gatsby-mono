@@ -2,7 +2,7 @@ import React from 'react';
 import TsTest from "./TsTest";
 
 export default {
-    title: "Components/TsTest",
+    title: "TestComponents/TsTest",
     component: TsTest,
     description: "Ts test component.",
 };

@@ -2,7 +2,7 @@ import React from "react"
 import { Test } from "./Test"
 
 export default {
-  title: "test",
+  title: "TestComponents/Test",
   component: Test,
 }
 

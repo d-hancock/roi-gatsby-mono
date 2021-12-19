@@ -11,10 +11,11 @@ import {
   ShieldCheckIcon,
   ViewGridIcon,
 } from "@heroicons/react/outline"
-
-export interface GenericDropDownMenuProps extends React.HTMLProps<HTMLDivElement> {
-  test?: string;
-}
+import GenericMenuItemList from "../../../../molecules/menus/GenericMenuItemList/GenericMenuItemList"
+import GenericMenuCallToActionItemList
+  from "../../../../molecules/menus/GenericMenuCallToActionItemList/GenericMenuCallToActionItemList"
+import { GenericMenuItemProps } from "../../../../molecules/menus/GenericMenuItem/GenericMenuItem"
+import { GenericMenuCallToActionItemProps } from "../../../../molecules/menus/GenericMenuCallToActionItem/GenericMenuCallToActionItem"
 
 const solutions = [
   {
@@ -48,9 +49,15 @@ const callsToAction = [
   { name: "Contact Sales", href: "#", icon: PhoneIcon },
 ]
 
+export interface GenericNavFlyoutMenuProps extends React.HTMLProps<HTMLDivElement> {
+  buttonLabel: string,
+  menuListData: GenericMenuItemProps[],
+  ctaListData: GenericMenuCallToActionItemProps[],
+  customBottomData?: any,
+}
 
-export default (props: GenericDropDownMenuProps) => {
-  const {} = props
+export const GenericNavFlyoutMenu = (props: GenericNavFlyoutMenuProps) => {
+  const { buttonLabel, menuListData, ctaListData, customBottomData } = props
   return (
     <Popover tw="relative">
       {({ open }) => (
@@ -62,7 +69,7 @@ export default (props: GenericDropDownMenuProps) => {
               tw`bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`,
             ]}
           >
-            <span>Solutions</span>
+            <span>{buttonLabel}</span>
             <ChevronDownIcon
               css={[
                 open ? tw`text-gray-600` : tw`text-gray-400`,
@@ -83,43 +90,13 @@ export default (props: GenericDropDownMenuProps) => {
           >
             <Popover.Panel tw="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
               <div tw="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div tw="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                  {solutions.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      tw="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                    >
-                      <item.icon
-                        tw="flex-shrink-0 h-6 w-6 text-indigo-600"
-                        aria-hidden="true"
-                      />
-                      <div tw="ml-4">
-                        <p tw="text-base font-medium text-gray-900">{item.name}</p>
-                        <p tw="mt-1 text-sm text-gray-500">{item.description}</p>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-                <div tw="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                  {callsToAction.map((item) => (
-                    <div
-                      key={item.name}
-                      tw="flow-root"
-                    >
-                      <a
-                        href={item.href}
-                        tw="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                      >
-                        <item.icon
-                          tw="flex-shrink-0 h-6 w-6 text-gray-400"
-                          aria-hidden="true"
-                        />
-                        <span tw="ml-3">{item.name}</span>
-                      </a>
-                    </div>
-                  ))}
-                </div>
+                <GenericMenuItemList itemListData={menuListData} />
+                {ctaListData && (
+                  <GenericMenuCallToActionItemList menuCtaData={ctaListData} />
+                )}
+                {customBottomData && (
+                  <div />
+                )}
               </div>
             </Popover.Panel>
           </Transition>
@@ -127,4 +104,6 @@ export default (props: GenericDropDownMenuProps) => {
       )}
     </Popover>
   )
-};
+}
+
+export default GenericNavFlyoutMenu

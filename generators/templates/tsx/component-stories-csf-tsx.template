@@ -12,7 +12,7 @@ export default {
 const Template = (args) => <{{pascalCase name}} {...args} />;
 Template.args = {
     {{#each props}}
-    {{name}} : {{{type}}} = null; // {{#if required}} required {{/if}} TODO assign real value here
+    {{name}} : "hi" // {{#if required}} required {{/if}} TODO assign real value here
     {{/each}}
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 import TwinTestComp from "./TwinTestComp";
 
 export default {
-    title: "Components/TwinTestComp",
+    title: "TestComponents/TwinTestComp",
     component: TwinTestComp,
     description: "Twin test comp component.",
 };

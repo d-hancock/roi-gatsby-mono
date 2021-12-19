@@ -3,7 +3,7 @@ import { StoryBookTest, StoryBookTestProps } from "./StoryBookTest"// @ts-ignore
 
 // @ts-ignore
 export default {
-    title: "Components/StoryBookTest",
+    title: "TestComponents/StoryBookTest",
     component: StoryBookTest,
     description: "Story book test component.",
 };

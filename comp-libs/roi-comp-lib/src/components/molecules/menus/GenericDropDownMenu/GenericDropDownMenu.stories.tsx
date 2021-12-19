@@ -2,7 +2,7 @@ import React from 'react';
 import GenericDropDownMenu from "./GenericDropDownMenu";
 
 export default {
-    title: "Components/GenericDropDownMenu",
+    title: "Components/Menus/GenericDropDownMenu",
     component: GenericDropDownMenu,
     description: "Generic drop down menu component.",
 };

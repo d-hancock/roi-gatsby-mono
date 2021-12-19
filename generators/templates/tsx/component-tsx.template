@@ -8,9 +8,11 @@ export interface {{pascalCase name}}Props extends React.HTMLProps<HTMLDivElement
 }
 
 {{/if}}
-export default ({{#if props}}props: {{pascalCase name}}Props{{/if}}) => {
+export const {{pascalCase name}} = ({{#if props}}props: {{pascalCase name}}Props{{/if}}) => {
   {{#if props}}const {} = props;{{/if}}
   return (
     <div>My awesome component</div>
   );
 };
+
+export default {{pascalCase name}}

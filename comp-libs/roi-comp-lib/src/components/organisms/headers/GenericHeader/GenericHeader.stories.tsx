@@ -2,7 +2,7 @@ import React from 'react';
 import GenericHeader from "./GenericHeader";
 
 export default {
-    title: "Components/GenericHeader",
+    title: "Components/Headers/GenericHeader",
     component: GenericHeader,
     description: "The base generic header organism component.",
 };
