@@ -9,7 +9,8 @@
   "workspaces": [
     "starters/*",
     "themes/*",
-    "comp-libs/*"
+    "component-libraries/*",
+    "sites/*"
   ],
   "scripts": {
     "develop:empty": "yarn workspace gatsby-starter-empty develop",

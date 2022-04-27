@@ -1,4 +1,18 @@
 {
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "babel-preset-gatsby",
+      {
+        "targets": {
+          "browsers": [
+            ">0.25%",
+            "not dead"
+          ]
+        }
+      }
+    ]
+  ],
   "plugins": [
     "babel-plugin-twin",
     [
@@ -16,23 +30,11 @@
       }
     ]
   ],
-  "presets": [
-    "@babel/preset-typescript",
-    [
-      "babel-preset-gatsby",
-      {
-        "targets": {
-          "browsers": [
-            ">0.25%",
-            "not dead"
-          ]
-        }
-      }
-    ]
-  ],
   "babelrcRoots": [
     "themes/*",
-    "comp-libs/*",
-    "starters/*"
-  ]
+    "component-libraries/*",
+    "starters/*",
+    "sites/*"
+  ],
+  "sourceMaps": true
 }

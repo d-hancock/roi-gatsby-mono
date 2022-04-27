@@ -7,7 +7,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `@roi/gatsby-theme-core`,
+      resolve: `@roi/gatsby-theme-core-v-1`,
       options: {
         basePath: '/blog'
       },

@@ -2,7 +2,8 @@
   "packages": [
     "starters/*",
     "themes/*",
-    "comp-libs/*"
+    "component-libraries/*",
+    "sites/*"
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,
